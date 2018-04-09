@@ -1,0 +1,17 @@
+$white: #fff;
+$black: #000;
+$lighter: #F8F4E3;
+$light: #EEE0CB;
+$dark: #848586;
+$darker: #2A2B2A;
+$blue: #4BB8F7;
+$blueDark: #4B74F7;
+$red: #FF6161;
+$redDark: #FF2B2B;
+
+@font-face {
+	font-family: "mouseMemoirs";
+	src:url("../fonts/MouseMemoirs-Regular.ttf");
+}
+
+$primary-font: "mouseMemoirs", "Arial", sans-serif;

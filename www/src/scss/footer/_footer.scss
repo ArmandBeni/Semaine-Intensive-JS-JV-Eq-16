@@ -1,0 +1,78 @@
+#footer{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: auto;
+    position: absolute;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row nowrap;
+    background-color: $darker;
+    color: $white;
+    font-size: 1.3rem;
+}
+
+.footer__newsletter{
+    margin: 0;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-flow: column nowrap;
+    box-sizing: border-box;
+    background-color: inherit;
+    color: inherit;
+}
+
+.footer__newsletter__row{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row nowrap;
+}
+
+.footer__contact{
+    margin: 0;
+    padding: 0 1rem;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
+    flex-flow: column nowrap;
+    box-sizing: border-box;
+    background-color: inherit;
+    color: inherit;
+}
+
+.footer__social{
+    margin: 0;
+    padding: 0 1rem;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row nowrap;
+    box-sizing: border-box;
+    background-color: inherit;
+    color: inherit;
+}
+
+.footer__social ul{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row nowrap;
+}
+
+.footer__social ul li{
+    margin: 0;
+    padding: 0 0.5rem;
+}
+
+.footer__social img{
+    width: 2.5rem;
+    height: auto;
+    fill: $white;
+}
