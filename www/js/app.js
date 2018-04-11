@@ -165,7 +165,7 @@ document.addEventListener(
     function(e) {
         let keyCode = e.which;
         console.log(e, keyCode, e.which)
-        if (keyCode == 32) {
+        if (keyCode == 115) {
             jump();
         }
     }

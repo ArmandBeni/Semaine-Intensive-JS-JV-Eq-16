@@ -290,6 +290,7 @@ a {
  }
 
 .game__container {
+  position: absolute;
   display: flex;
   align-items: flex-end;
   width: 70%;
@@ -298,29 +299,28 @@ a {
 
 .game__character {
   z-index: 1000;
-  margin: 0 0 1rem 18rem;
+  margin: 0 0 0 18rem;
   width: 800px;
   height: 200px;
  }
 
   .game__container #pop{
-    display: flex;
-    align-items: flex-end;
     position: absolute;
-    bottom: -5%;
+    bottom: 28%;
   }
 
   .game__container #pop #page{
     width: 60px;
-    height: 90px;
+    height: 60px;
+    bottom: -80px;
   }
   .game__container #pop #chaise{
-    width: 150px;
-    height: 100px;
+    width: 80px;
+    height: 80px;
   }
   .game__container #pop #table{
-    width: 150px;
-    height: 100px;
+    width: 120px;
+    height: 80px;
   }
 
   .game__container #pop .none {
@@ -332,24 +332,21 @@ a {
   .game__container #pop .block {
     position: absolute;
     left : 80%;
-    display: block ;
+    display: block;
   }
 
   #hero{
       left: 20%;
-      bottom: 0;
       position: relative;
       transition: all 0.4s;
   }
 
   #vilain{
-      width: 50px;
-      height: 200px;
-      background-color: orange;
-      position: absolute;
-      bottom: -5%;
-      left: 15%;
+      position: relative;
+      left: 0;
+      bottom: 20px;
       transition: all 0.4s;
+      z-index: 100000;
   }
 
 .popin {
