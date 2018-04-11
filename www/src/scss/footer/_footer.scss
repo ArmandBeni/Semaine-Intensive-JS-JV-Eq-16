@@ -3,7 +3,6 @@
     padding: 0;
     width: 100%;
     height: auto;
-    position: absolute;
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -25,6 +24,11 @@
     color: inherit;
 }
 
+.footer__newsletter h4{
+    margin: 0;
+    padding: 0;
+}
+
 .footer__newsletter__row{
     margin: 0;
     padding: 0;
@@ -34,9 +38,23 @@
     flex-flow: row nowrap;
 }
 
+.footer__newsletter__row button{
+    width: 3.75rem;
+    margin-left: 0.3125rem;
+    border-radius: 3.125rem;
+    border:0;
+}
+
+.footer__newsletter__row button:hover{
+  background-color: $greenLigth;
+  color: $greenDark;
+  transition-timing-function: ease;
+  transition-duration: 0.4s;
+}
+
 .footer__contact{
     margin: 0;
-    padding: 0 1rem;
+    padding: 2.5625rem 1rem;
     height: auto;
     display: flex;
     justify-content: space-around;
@@ -45,6 +63,10 @@
     box-sizing: border-box;
     background-color: inherit;
     color: inherit;
+}
+
+.footer__contact p{
+  margin: 0;
 }
 
 .footer__social{

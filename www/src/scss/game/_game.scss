@@ -1,0 +1,43 @@
+.game__space{
+  margin: 0 auto;
+  width: 100%;
+  height: 49rem;
+  background: red;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.game__container{
+  display: flex;
+  align-items: flex-end;
+  width: 70%;
+  height: 60%;
+  background: url(../images/couloir.png) -10000px center/cover repeat-x;
+
+}
+
+.game__character{
+  margin: 0 0 1rem 18rem;
+}
+
+.game__container #pop{
+  position: absolute;
+  bottom: 0%;
+}
+
+.game__container #pop .none {
+  position: absolute;
+  left : 850px;
+  width: 90px;
+  height: 90px;
+  display: none ;
+}
+
+.game__container #pop .block {
+  position: absolute;
+  left : 850px;
+  width: 90px;
+  height: 90px;
+  display: block ;
+}
