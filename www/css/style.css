@@ -288,6 +288,23 @@ a {
   justify-content: center;
   align-items: center;
  }
+.start{
+  height: 50%;
+  position: absolute;
+  z-index: 39877847435;
+}
+
+.game__score{
+    color: $black;
+    position: absolute;
+    right: 5%;
+    top: -2%;
+}
+
+.game__container h2{
+  position: absolute;
+  z-index: 43865428341;
+}
 
 .game__container {
   position: absolute;

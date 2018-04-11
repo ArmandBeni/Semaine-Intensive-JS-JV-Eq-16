@@ -10,7 +10,30 @@ function loop(){
     20
   )
 }
-loop()
+
+let metre = 0
+function loopScore(){
+  let move = setInterval(
+    function(){
+      let score = document.querySelector(".game__score")
+      metre ++
+      score.innerHTML = `Score : ${metre}m`
+    },
+    150
+  )
+}
+
+
+//start Functions
+let start = document.querySelector(".start")
+
+start.addEventListener('click',
+function(){
+  happen()
+  loop()
+  loopScore()
+  start.style.display = 'none'
+})
 
 let randomNumb
 let itemsTab = document.querySelectorAll(".items")
@@ -66,7 +89,6 @@ function happen(){
   )
 }
 
-happen()
 
 const player = document.querySelector("#hero")
 let hero = {
@@ -165,7 +187,7 @@ document.addEventListener(
     function(e) {
         let keyCode = e.which;
         console.log(e, keyCode, e.which)
-        if (keyCode == 115) {
+        if (keyCode == 122) {
             jump();
         }
     }
