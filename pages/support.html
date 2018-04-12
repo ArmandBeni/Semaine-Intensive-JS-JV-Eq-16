@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>GameIt.com</title>
+        <link rel="stylesheet" href="../css/style.css">
+        <link rel="icon" type="image/png" href="../images/teteBeni.png" alt="favIcon">
+    </head>
+    <body>
+        <header id="header">
+            <div class="header__logo"><!-- partie gauche du header -->
+                <a href="../index.html">
+                    <h2>Le journal de Benichou</h2>
+                </a>
+            </div>
+            <div class="header__nav"><!-- partie droite du header -->
+                <div class="menu">
+                      <div class="game">
+                            <a href="game.html">Jeu</a>
+                      </div>
+                      <div class="boutique">
+                          <a href="boutique.html">Boutique</a>
+                      </div>
+                      <div class="support">
+                          <a href="support.html">Support</a>
+                      </div>
+                      <img src="../images/FR.png" alt="frFlag" class="frFlag">
+                </div>
+            </div>
+        </header>
+        <main class="mainSupport">
+          <div class="popin">
+      <h2> Besoin d'aide ? </h2>
+      <p>
+        Hey ! Si tu as problème avec mon jeu, n'hésite pas à nous contacter grâce à la boite contact ci-dessous !
+      </p>
+      <form method="get" action="pages2.php">
+        <div>
+          <label for="lastname">Nom</label>
+          <input type="text" name="nom" id="field" placeholder="Benichou"/>
+        </div>
+        <div>
+          <label for="lastname">E-mail</label>
+          <input type="text" name="e-mail" id="field" placeholder="armand.benichou@hetic.net"/>
+        </div>
+        <div>
+          <label for="lastname">Source du problème</label>
+          <textarea name="description" rows="3" cols="80" placeholder="Armand ne veut pas courir !"></textarea>
+        </div>
+        <div>
+        <div id="button">
+          <button type="submit">Envoyer</button>
+        </div>
+      </form>
+    </div>
+        </main>
+        <footer id="footer">
+            <div class="footer__newsletter"><!-- newsletter -->
+                <h4>Join our newsletter to receive ingame items !</h4>
+                <div class="footer__newsletter__row">
+                    <input type="email" name="newsletter" value="email">
+                    <button type="button" name="button">Register</button>
+                </div>
+            </div>
+            <div class="footer__contact"><!-- nous contacter (commercial) -->
+                <p>Copyright © <span>gameit.com</span> - All rights reserved.</p>
+                <p>Contact us by email - <a href="mailto:emailme@gameit.com">emailme@gameit.com</a> !</p>
+            </div>
+            <div class="footer__social"><!-- réseaux sociaux -->
+                <ul>
+                    <li>
+                        <a href=""><img src="../images/facebook.png" alt="facebook"></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="../images/twitter.png" alt="twitter"></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="../images/github.png" alt="github"></a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+        <script src="js/app.js" type="text/javascript"></script>
+    </body>
+</html>

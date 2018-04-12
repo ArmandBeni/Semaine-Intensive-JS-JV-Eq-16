@@ -1,0 +1,145 @@
+.mainGame{
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: column nowrap;
+}
+
+#game{
+    margin: 0 3rem 2rem 3rem;
+    top: 0;
+    width: 100%;
+    height: 800px;
+    background: url("../images/couloir.png") repeat 0 0;
+    box-sizing: border-box;
+    position: relative;
+}
+
+/* Menu Selection perso */
+.game__characterList{
+    margin: 1rem auto 0;
+    width: 70%;
+    height: 11rem;
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+}
+
+.game__characterList img,.name{
+    margin: 0;
+    padding: 5px;
+
+}
+
+#tetePers{
+    padding: 1rem 1rem 0 1rem;
+    height: 10rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+}
+
+#tetePers:hover{
+    border: solid 2px $redDark;
+    background-image: linear-gradient(-180deg, $orange 0%, $orangeDark 100%);
+}
+
+/* Score */
+
+
+
+/* Personnages */
+
+#hero{
+    width: 180px;
+    height: 250px;
+    background-size: auto 250px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: 50px;
+    left: 400px;
+    transition: all 0.4s ease-in-out;
+}
+
+#vilain{
+    width: 180px;
+    height: 250px;
+    background-size: auto 250px;
+    background-repeat: no-repeat;
+    background-position: center;
+    position: absolute;
+    bottom: 50px;
+    left: 0px;
+    transition: all 0.4s;
+}
+
+/* HUD */
+
+@keyframes pulse{
+  0% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+  100% { transform: scale(1); }
+}
+
+.hearts{
+    margin: 1rem 2rem;
+    padding: 0;
+    height: 70px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-flow: row nowrap;
+    position: absolute;
+    border: 2px solid grey;
+    border-radius: 8px;
+    background-color: white;
+}
+
+#heart0, #heart1, #heart2{
+    margin: 0 1rem;
+    fill: red;
+    position: relative;
+    top: 5px;
+    width: 50px;
+    animation: pulse 1s ease infinite;
+}
+
+.poubelle, .table, .papier {
+    margin: 0;
+    padding: 0;
+    bottom: 50px;
+    width: 50px;
+    height: 80px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    transition: all 0.4s linear;
+    background: blue;
+    position: absolute;
+}
+
+.poubelle{
+    background: url("../images/obstacles/poubelle.png") center center/contain no-repeat;
+}
+
+.table{
+    background: url("../images/obstacles/table.png") center center/contain no-repeat;
+}
+
+.papier{
+    background: url("../images/obstacles/page.png") center center/contain no-repeat;
+}
+
+.game__score{
+    color: $black;
+    position: absolute;
+    right: 5%;
+    top: 0;
+}
+
+.score{
+    color: $black;
+    position: absolute;
+    right: 2%;
+    top: 0;
+}

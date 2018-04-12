@@ -1,0 +1,148 @@
+*{
+    list-style: none;
+    font-family: $primary-font;
+    box-sizing: border-box;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    background-color: linear-gradient(-179deg, #FFFFFF 0%, #E5E5E5 100%);
+    height: 100%;
+    position: relative;
+}
+
+a{
+    color: inherit;
+    text-decoration: none;
+}
+
+.mainHomepage{
+  height: 111.875rem;
+}
+
+#container{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 80vh;
+}
+
+.landing{
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    width: 100%;
+    height: 43rem;
+    position: absolute;
+    background: url(../images/photojouer.png) no-repeat center/cover;
+
+}
+
+.landing a{
+  width: 18.75rem;
+  margin: 0 0 8.5rem 0;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 3.75rem;
+  color: $white;
+  background-image: linear-gradient(-180deg, $greenLigth 0%, $greenDark 100%);
+  border-radius: 2.625rem;
+  width: 16.5rem;
+  height: 5.625rem;
+  z-index:1;
+}
+
+.landing a:hover{
+    background-image: linear-gradient(-180deg, $orange 0%, $orangeDark 100%);
+    transition-timing-function: ease;
+    transition-duration: 0.4s;
+}
+
+.picturePlay{
+  width: 100%;
+  position: absolute;
+  top: -25%;
+  z-index: -1;
+}
+
+.landing a h3{
+    margin: 0;
+}
+
+.landing__wave{
+    position: relative;
+    height: 59.0625rem;
+    background: url(../images/vague.png) no-repeat center/cover;
+}
+
+.landing__wave img{
+    width: 100%;
+    height: auto;
+    top: 116rem;
+}
+
+.landing__wave img.landing_waveArrow{
+    top: 85%;
+    left: 48.5%;
+    width: 3.125rem;
+    position: absolute;
+}
+
+.landing__waveDay{
+    position: absolute;
+    left: 20%;
+    bottom: 30%;
+    color: $white;
+    font-size: 3.4375rem;
+    margin: 0;
+}
+.landing__waveText{
+    position: absolute;
+    left: 20%;
+    bottom: 23%;
+    color: $white;
+    font-size: 3.4375rem;
+    margin: 0;
+}
+
+.book{
+  display: flex;
+  justify-content: center;
+  max-height: 53rem;
+  padding: 3.125rem 0;
+  margin:0 auto;
+  background-image: radial-gradient(50% 55%, $orange 0%, #EAEAEA 56%);
+}
+
+.book__page{
+    width: 80%;
+    height: auto;
+    position: relative;
+}
+
+.book__pageHistory{
+    position: absolute;
+    width: 25rem;
+    font-size: 2.625rem;
+    left : 20%;
+    padding-top: 6.875rem;
+}
+
+.book__pageHistory p{
+    margin: 0;
+}
+
+.book__pageRules{
+    position: absolute;
+    width: 25rem;
+    font-size: 2rem;
+    left : 57%;
+    padding-top: 3.4375rem;
+    margin:0;
+}
+
+.book__pageRules p{
+  margin: 0 0 0.9375rem 0;
+}
