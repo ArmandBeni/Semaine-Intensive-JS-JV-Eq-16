@@ -16,6 +16,7 @@ body {
 a {
   color: inherit;
   text-decoration: none; }
+
 .mainHomepage {
   height: 111.875rem; }
 
@@ -42,16 +43,16 @@ a {
   align-items: center;
   font-size: 3.75rem;
   color: #fff;
-  background-image: linear-gradient(-180deg, #8CC63F 0%, #1D8326 100%);
+  background: #8CC63F;
   border-radius: 2.625rem;
+  border: solid 0.125rem #000;
   width: 16.5rem;
   height: 5.625rem;
   z-index: 1; }
 
 .landing a:hover {
-  background-image: linear-gradient(-180deg, #FFB95F 0%, #FD9B20 100%);
-  transition-timing-function: ease;
-  transition-duration: 0.4s; }
+  background: #FFDCAD;
+  color: #000; }
 
 .picturePlay {
   width: 100%;
@@ -122,7 +123,7 @@ a {
   width: 25rem;
   font-size: 2rem;
   left: 57%;
-  padding-top: 3.4375rem;
+  padding-top: 7rem;
   margin: 0; }
 
 .book__pageRules p {
@@ -292,11 +293,11 @@ a {
   flex-flow: column nowrap; }
 
 #game {
-  margin: 0 3rem 2rem 3rem;
+  margin: 0 3rem 13rem 3rem;
   top: 0;
-  width: 100%;
-  height: 800px;
-  background: url("../images/couloir.png") repeat 0 0;
+  width: 80rem;
+  height: 34rem;
+  background: url("../images/couloir.png") repeat 0/cover;
   box-sizing: border-box;
   position: relative; }
 
@@ -321,8 +322,8 @@ a {
   justify-content: flex-end; }
 
 #tetePers:hover {
-  border: solid 2px #FF2B2B;
-  background-image: linear-gradient(-180deg, #FFB95F 0%, #FD9B20 100%); }
+  border: solid 0.125rem #000;
+  background-color: #FFBE6D; }
 
 /* Score */
 /* Personnages */
@@ -409,6 +410,23 @@ a {
   position: absolute;
   right: 2%;
   top: 0; }
+
+#restartBtn {
+  position: absolute;
+  left: 47%;
+  bottom: -20%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 10rem;
+  height: 4rem;
+  color: #fff;
+  background: #8CC63F;
+  border-radius: 1rem; }
+
+#restartBtn:hover {
+  background: #FFDCAD;
+  color: #000; }
 
 .mainSupport {
   height: 52.1rem; }
@@ -500,5 +518,66 @@ form button:hover {
 
   .book__pageRules {
     left: 55%; } }
+.container {
+  background-color: #F4F4F4;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  height: 58.4rem; }
+
+.shop__title {
+  margin: 0 auto;
+  padding-top: 3.5rem;
+  color: #000;
+  font-size: 3.75rem; }
+
+.shop__item {
+  width: 70rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 5rem;
+  padding: 2rem;
+  border: solid 0.125rem #8CC63F; }
+
+.shop__skinTitle, .shop__bonusTitle {
+  width: 100%;
+  color: #000;
+  text-decoration: underline;
+  font-size: 1.875rem;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center; }
+
+.shop__bonus, .shop__skin {
+  width: 49%;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+
+.shop__mechant {
+  width: 100%;
+  height: 16rem;
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap; }
+
+.mechantImg {
+  width: 6rem; }
+
+.teteMech {
+  padding: 1rem 1rem 0 1rem;
+  height: 12rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  text-align: center; }
+
+.teteMech:hover {
+  border: solid 0.125rem #000;
+  background-color: #FFBE6D; }
+
+.bonus {
+  width: 6rem; }
 
 /*# sourceMappingURL=style.css.map */

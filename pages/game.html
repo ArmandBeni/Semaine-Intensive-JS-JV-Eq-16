@@ -73,7 +73,6 @@
                         <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
                     </svg>
                 </div>
-                <div id="playBtn" class="button">Play!</div>
                 <div id="restartBtn" class="button">Restart</div>
                 <div class="game__container">
                     <h2 class="game__score"> Score : </h2><h2 class="score">0</h2>
@@ -82,6 +81,12 @@
                 <div id="hero" class="player"></div>
             </div>
         </div>
+        <audio class="menuSound" src="../media/menu.wav" loop></audio>
+        <audio class="gameSound" src="../media/game.wav" loop></audio>
+        <audio class="jumpSound" src="../media/jump.wav"></audio>
+        <audio class="damageSound" src="../media/damage.wav"></audio>
+        <audio class="collisionSound" src="../media/collision.wav"></audio>
+        <audio class="looseSound" src="../media/loose.wav"></audio>
         <footer id="footer">
             <div class="footer__newsletter"><!-- newsletter -->
                 <h4>Join our newsletter to receive ingame items !</h4>

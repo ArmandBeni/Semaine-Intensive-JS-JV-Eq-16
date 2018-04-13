@@ -93,6 +93,7 @@ function isCollide(b) {
 function checkCollide(element){
     if (isCollide(element) === true) {
         takeDamage()
+        collisionSound.play()
     }
 }
 
@@ -114,16 +115,24 @@ function takeDamage(){
 
 function removeHeart(){
     document.getElementById(`heart${hero.health}`).style.visibility = "hidden"
+    damageSound.play()
+}
+
+function recoverHearts(){
+    document.getElementById(`heart${hero.health}`).style.visibility = "visible"
 }
 
 //met fin au jeu en modifiant la variable isGameOver en true
 function gameOver() {
     isGameOver = true
+    gameSound.pause()
+    looseSound.play()
 }
 
 //déclenche le saut
 function jumping(){
     isJumping = true
+    jumpSound.play()
 }
 
 /* Scolling background */
@@ -308,14 +317,25 @@ function loopScore(){
     }, 200)
 }
 
+/* Sounds */
+
+let menuSound = document.querySelector(".menuSound")
+let gameSound = document.querySelector(".gameSound")
+let jumpSound = document.querySelector(".jumpSound")
+let damageSound = document.querySelector(".damageSound")
+let collisionSound = document.querySelector(".collisionSound")
+let looseSound = document.querySelector(".looseSound")
+
 /* INIT GAME */
 
 let randomTime = 0
-
+menuSound.play()
 function init() {
     metre = 0
     unloadScrollBars()
     if (isHeroSelected === true && !isGameOver) {
+        menuSound.pause()
+        gameSound.play()
         scroll()
         loopScore()
         setTimeout(() => {
@@ -337,6 +357,8 @@ function randomSpawn() {
 
 function restart(){
     isGameOver = false
+    hero.health = 2
+    recoverHearts()
     init()
 }
 

@@ -47,17 +47,17 @@ a{
   align-items: center;
   font-size: 3.75rem;
   color: $white;
-  background-image: linear-gradient(-180deg, $greenLigth 0%, $greenDark 100%);
+  background: $greenLigth;
   border-radius: 2.625rem;
+  border: solid 0.125rem $black;
   width: 16.5rem;
   height: 5.625rem;
   z-index:1;
 }
 
 .landing a:hover{
-    background-image: linear-gradient(-180deg, $orange 0%, $orangeDark 100%);
-    transition-timing-function: ease;
-    transition-duration: 0.4s;
+    background: #FFDCAD;
+    color: $black;
 }
 
 .picturePlay{
@@ -139,7 +139,7 @@ a{
     width: 25rem;
     font-size: 2rem;
     left : 57%;
-    padding-top: 3.4375rem;
+    padding-top: 7rem;
     margin:0;
 }
 
