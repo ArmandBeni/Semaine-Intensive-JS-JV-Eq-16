@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>GameIt.com</title>
+        <link rel="icon" type="image/png" href="../images/teteBeni.png" alt="favIcon">
+        <link rel="stylesheet" href="../css/style.css">
+    </head>
+    <body>
+        <header id="header">
+            <div class="header__logo"><!-- partie gauche du header -->
+              <a href="../index.html">
+                <h2>Le journal de Benichou</h2>
+              </a>
+            </div>
+            <div class="header__nav"><!-- partie droite du header -->
+                <div class="menu">
+                    <div class="game">
+                        <a href="game.html">Jeu</a>
+                    </div>
+                    <div class="boutique">
+                        <a href="boutique.html">Boutique</a>
+                    </div>
+                    <div class="support">
+                        <a href="support.html">Support</a>
+                    </div>
+                    <img src="../images/FR.png" alt="frFlag" class="frFlag">
+                </div>
+            </div>
+        </header>
+        <div class="mainGame">
+            <div class="game__characterList">
+                <div id="tetePers" class="Loana">
+                    <img src="../images/teteLoana.png" alt="teteLoana">
+                    <h2 class="name">Loana</h2>
+                </div>
+                <div id="tetePers" class="Loulou">
+                    <img src="../images/teteLouis.png" alt="teteLouis">
+                    <h2 class="name">Loulou</h2>
+                </div>
+                <div id="tetePers" class="Audrey">
+                    <img src="../images/teteAudrey.png" alt="teteAudrey">
+                    <h2 class="name">Audrey</h2>
+                </div>
+                <div id="tetePers" class="Armand">
+                    <img src="../images/teteBeni.png" alt="teteArmand">
+                    <h2 class="name">Armand</h2>
+                </div>
+                <div id="tetePers" class="Alex">
+                    <img src="../images/teteAlex.png" alt="teteAlex">
+                    <h2 class="name">Alex</h2>
+                </div>
+                <div id="tetePers" class="Noemie">
+                    <img src="../images/teteNoemie.png" alt="teteNoemie">
+                    <h2 class="name">Noémie</h2>
+                </div>
+                <div id="tetePers" class="Louis">
+                    <img src="../images/teteLoulou.png" alt="teteLouLou">
+                    <h2 class="name">Louis</h2>
+                </div>
+            </div>
+            <div id="game">
+                <div id="health" class="hearts">
+                    <svg id="heart0" class="heart" viewBox="0 0 32 29.6">
+                        <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
+                    </svg>
+                    <svg id="heart1" class="heart" viewBox="0 0 32 29.6">
+                        <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
+                    </svg>
+                    <svg id="heart2" class="heart" viewBox="0 0 32 29.6">
+                        <path d="M23.6,0c-3.4,0-6.3,2.7-7.6,5.6C14.7,2.7,11.8,0,8.4,0C3.8,0,0,3.8,0,8.4c0,9.4,9.5,11.9,16,21.2c6.1-9.3,16-12.1,16-21.2C32,3.8,28.2,0,23.6,0z"/>
+                    </svg>
+                </div>
+                <div id="restartBtn" class="button">Restart</div>
+                <div class="game__container">
+                    <h2 class="game__score"> Score : </h2><h2 class="score">0</h2>
+                </div>
+                <div id="vilain" class="bot"></div>
+                <div id="hero" class="player"></div>
+            </div>
+        </div>
+        <audio class="menuSound" src="../media/menu.wav" loop></audio>
+        <audio class="gameSound" src="../media/game.wav" loop></audio>
+        <audio class="jumpSound" src="../media/jump.wav"></audio>
+        <audio class="damageSound" src="../media/damage.wav"></audio>
+        <audio class="collisionSound" src="../media/collision.wav"></audio>
+        <audio class="looseSound" src="../media/loose.wav"></audio>
+        <footer id="footer">
+            <div class="footer__newsletter"><!-- newsletter -->
+                <h4>Join our newsletter to receive ingame items !</h4>
+                <div class="footer__newsletter__row">
+                    <input type="email" name="newsletter" value="email">
+                    <button type="button" name="button">Register</button>
+                </div>
+            </div>
+            <div class="footer__contact"><!-- nous contacter (commercial) -->
+                <p>Copyright © <span>gameit.com</span> - All rights reserved.</p>
+                <p>Contact us by email - <a href="mailto:emailme@gameit.com">emailme@gameit.com</a> !</p>
+            </div>
+            <div class="footer__social"><!-- réseaux sociaux -->
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/LeJournalDeBenichou/"><img src="../images/facebook.png" alt="facebook"></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="../images/twitter.png" alt="twitter"></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="../images/github.png" alt="github"></a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+        <script src="../js/app.js" type="text/javascript"></script>
+    </body>
+</html>

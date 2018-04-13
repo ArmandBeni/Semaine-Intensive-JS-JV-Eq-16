@@ -1,13 +1,93 @@
 <!DOCTYPE html>
 <html lang="fr">
-  <head>
-    <meta charset="utf-8"/>
-    <title>COUCOU</title>
-    <meta name="description" content="description de ma page"/>
-    <link rel="stylesheet" href="styles/style.css">
-  </head>
-  <body>
-    <h1>TITRE</h1>
-    <script src="scripts/app.js"></script>
-  </body>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta http-equiv="X-UA-Compatible" content="ie=edge">
+        <title>GameIt.com</title>
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="icon" type="image/png" href="images/teteBeni.png" alt="favIcon">
+    </head>
+    <body>
+        <header id="header">
+            <div class="header__logo"><!-- partie gauche du header -->
+              <a href="index.html">
+                <h2>Le journal de Benichou</h2>
+              </a>
+            </div>
+            <div class="header__nav"><!-- partie droite du header -->
+                <div class="menu">
+                    <div class="game">
+                        <a href="pages/game.html">Jeu</a>
+                    </div>
+                    <div class="boutique">
+                        <a href="pages/boutique.html">Boutique</a>
+                    </div>
+                    <div class="support">
+                        <a href="pages/support.html">Support</a>
+                    </div>
+                    <img src="images/FR.png" alt="frFlag" class="frFlag">
+                </div>
+            </div>
+        </header>
+        <main class="mainHomepage">
+          <div id="container">
+              <div class="landing">
+                  <a href="pages/game.html" class="landing__button">
+                      <h3>Jouer !</h3>
+                  </a>
+              </div>
+              <div class="landing__wave">
+                  <h4 class="landing__waveDay">Journal, Jour # 234 :</h4>
+                  <h4 class="landing__waveText">Ça y est, c’est le début dans la deuxième semaine intensive . . .</h4>
+                  <img src="images/flecheSlide.png" alt="flecheSlide" class="landing_waveArrow">
+              </div>
+              <div class="book">
+                  <img src="images/livre.png" alt="livre" class="book__page">
+                  <div class="book__pageHistory">
+                      <p>
+                        Journal, Jour # 234 : Ça y est, c’est le début dans la deuxième semaine intensive de développement web. J’espère vraiment me retrouver avec des gens cools et rigoureux ! En plus j’ai passé une mauvaise nuit, j’ai rêvé que Camille Broussin me poursuivait dans les couloirs d’Hetic…
+                      </p>
+                  </div>
+                  <div class="book__pageRules">
+                      <p>Règles du jeu :</p>
+                      <p>
+                        Dans ce jeu, tu vas pouvoir me contrôler ou contrôler un de mes amis. Choisis ton préféré, même si je sais que c’est moi.
+                        Le but étant d’aller le plus loooooins possible sans te faire rattraper par Camille Broussin.
+                      </p>
+                      <p>Pour cela, tu auras juste besoin de cette touche :</p>
+                      <p>Espace : pour sauter.</p>
+                      <p>Bonne chance !</p>
+                  </div>
+              </div>
+          </div>
+        </main>
+        <footer id="footer">
+            <div class="footer__newsletter"><!-- newsletter -->
+                <h4>Join our newsletter to receive ingame items !</h4>
+                <div class="footer__newsletter__row">
+                    <input type="email" name="newsletter" value="email">
+                    <button type="button" name="button">Register</button>
+                </div>
+            </div>
+            <div class="footer__contact"><!-- nous contacter (commercial) -->
+                <p>Copyright © <span>gameit.com</span> - All rights reserved.</p>
+                <p>Contact us by email - <a href="mailto:emailme@gameit.com">emailme@gameit.com</a> !</p>
+            </div>
+            <div class="footer__social"><!-- réseaux sociaux -->
+                <ul>
+                    <li>
+                        <a href="https://www.facebook.com/LeJournalDeBenichou/"><img src="images/facebook.png" alt="facebook"></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/twitter.png" alt="twitter"></a>
+                    </li>
+                    <li>
+                        <a href=""><img src="images/github.png" alt="github"></a>
+                    </li>
+                </ul>
+            </div>
+        </footer>
+        <script src="js/app.js" type="text/javascript"></script>
+    </body>
 </html>
