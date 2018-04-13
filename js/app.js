@@ -10,7 +10,7 @@ let hero = { //objet hero
 }
 const vilain = document.querySelector("#vilain")//div vilain html
 let bot = { //objet vilain
-    name: "",
+    name: "Camille",
     health: 5,
     pos: {
         x: 100,
@@ -26,7 +26,7 @@ var isGameOver = false
 function move() {
     if (!isGameOver) {
         hero.pos.x -= 100
-        if (hero.pos.x <= -1) {
+        if (hero.pos.x < 0) {
             gameOver()
         }
         setPlayerPos()
@@ -207,6 +207,25 @@ function animate() {
     }, 200)
 }
 
+//TODO: Optimiser pour éviter le copié collé de fontion
+function animateVilain() {
+    let pos = 0
+    let int = setInterval(() => {
+        if (!isGameOver) {
+            if (pos < 7) {
+                pos++
+            }else {
+                pos = 0
+            }
+            //Concaténation dans l'url en fonction du choix du skin
+            vilain.style.backgroundImage = `url("../images/run/${bot.name}/silhouette${bot.name}${pos}.png")`
+        }
+        else {
+            clearInterval(int)
+        }
+    }, 200)
+}
+
 function run(){
     setInterval(() => {
         animate()
@@ -340,13 +359,15 @@ function init() {
         loopScore()
         setTimeout(() => {
             run()
+            animateVilain()
         }, 300)
         randomSpawn()
     }
 }
 
 function randomSpawn() {
-    let spawnTime = Math.floor(Math.random()*(11000 - 9000) + 9000)
+    //Distance de spawn aléatoire entre 2 obstacles
+    let spawnTime = Math.floor(Math.random()*(9000 - 7000) + 7000)
     setTimeout(() => {
         if (!isGameOver) {
             createObject()
@@ -355,13 +376,16 @@ function randomSpawn() {
     }, spawnTime)
 }
 
+//redemarre la partie
 function restart(){
     isGameOver = false
     hero.health = 2
     recoverHearts()
+    hero.pos.x = 400
     init()
 }
 
-document.querySelector("#restartBtn").addEventListener("click", () => {
+document.querySelector("#restartBtn").addEventListener(
+    "click", () => {
         restart()
     })
